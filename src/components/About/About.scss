@@ -1,0 +1,116 @@
+@import '../Home.scss';
+.About{
+    padding: 50px 0px;
+    /*-----------------------------
+	3. ABOUT AREA
+    ------------------------------*/
+
+    
+
+
+    .about-right{
+        padding:20px;
+        text-align: right !important;
+        .section-header {
+            text-align: right;
+        }
+        
+    }
+    .about-img {
+        position: relative;
+    }
+    
+    .about-img img {
+        width: 90%;
+        height: 323px;
+    }
+    .box-gradient {
+        background: linear-gradient(45deg, $yellow, $green);
+        width: 90%;
+        height: 323px;
+        margin-right: 10%;
+    }
+    .about-layer-two {
+        margin-top: -50px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+    }
+    a.more {
+        display: block;
+        text-align: left;
+        margin: 20px;
+        color: #faab16;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+.about-features {
+    background: rgba(#FFF,.7) none repeat scroll 0 0;
+    -webkit-box-shadow: 0 5px 10px #f1f1f1;
+    box-shadow: 0 5px 10px $green;
+    position: relative;
+    z-index: 9;
+    width: 80% !important;
+    margin:-230px auto 100px;
+    .about-area .about-bottom-content .row {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .single-features {
+        padding: 20px 20px;
+        text-align:center;
+        p {
+            font-size: 14px;
+            color: $green;
+        }
+    }
+
+    .features-icon {
+        color: $green;
+        font-size: 48px;
+        margin-bottom: 20px;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .single-features h3 {
+        font-size: 24px;
+        font-weight:700;
+        margin-bottom: 20px;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        color:#000;
+    }
+
+    .single-features .read-more {
+        color: #010101;
+        display: inline-block;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .single-features:hover h3,
+    .single-features:hover .features-icon {
+        color: #ff8a00;
+    }
+
+    .single-features .read-more i {
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .single-features .read-more:hover i {
+        padding-right: 10px;
+    }
+
+    .single-features .read-more:hover {
+        color: #ff8a00;
+    }
+}

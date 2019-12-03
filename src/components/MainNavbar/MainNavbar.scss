@@ -1,0 +1,44 @@
+@import '../Home.scss';
+#main-navbar {
+  background:#fff;
+  padding: 0;
+  width:100%;
+  transition:all .3s ease-in-out;
+  .navbar-nav{
+    .nav-link {
+      color: #252a34;
+      font-size:15px;
+      font-weight:700;
+      font-family: 'Changa' !important;
+    }
+  }
+}
+.fixed-top{
+  box-shadow:2px 0px 10px #CCC;
+  .navbar-brand{
+    padding:0;
+  }
+}
+  @media (min-width:768px) {
+    .navigation-clean-button {
+      padding-top:1rem;
+      padding-bottom:1rem;
+    }
+  }
+
+  .navigation-clean-button .navbar-toggler {
+    border-color:#ddd;
+  }
+  
+  .navigation-clean-button .navbar-toggler:hover, .navigation-clean-button .navbar-toggler:focus {
+    background:none;
+  }
+  
+  .navigation-clean-button .navbar-toggler {
+    color:#888;
+  }
+  
+
+
+  
+  

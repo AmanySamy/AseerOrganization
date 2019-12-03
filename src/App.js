@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter , Route , Switch } from 'react-router-dom';
+import Home from './components/Home';
+import Projects from './components/Projects/Projects';
+import './App.css'
+import './components/Home.scss'
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import About from './components/About/About';
+import Team from './components/Team/Team';
+import News from './components/News/News';
+import ItemViewer from './components/ItemViewer';
+import MainNavbar from './components/MainNavbar/MainNavbar'
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter >
+
+      <MainNavbar />
+      <Header />
+      <Switch >
+        <Route exact path="/" component={Home} />            
+        {/* <Route path="/about" component={About} />             */}
+        <Route path="/all-projects" component={Projects} />            
+        <Route path="/all-news" component={News} />
+        <Route path="/contact" component={Contact} />
+        <Route exact path="/news/:id" render={({match}) => (<ItemViewer url={`/news/${match.params.id}`} />)} />          
+        <Route exact path="/project/:id" render={({match}) => (<ItemViewer url={`/achievements/${match.params.id}`} />)} />          
+        <Route exact path="/member/:id" render={({match}) => (<ItemViewer url={`/organizational-structure/${match.params.id}`} />)} />          
+        <Route exact path="/about" render={({match}) => (<ItemViewer url={`/about`} />)} />          
+        <Route path="/all-members" component={Team} />                      
+      </Switch>
+      <Footer />
+    </BrowserRouter >
   );
 }
 

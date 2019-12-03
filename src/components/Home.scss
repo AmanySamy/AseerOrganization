@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Changa:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Almarai:300,400,700,800&display=swap');
+
+
+$green:#58a442;
+$yellow:#faab16;
+body{
+    // font-family: 'Changa', sans-serif !important;
+    font-family: 'Almarai', sans-serif !important;
+    direction:rtl;
+    font-size: 16px !important;
+    line-height: 2 !important;
+    font-weight: 400 !important;
+    color: #51565f !important;
+}
+.is-active{
+    color:$green !important;
+}
+.bg-section{
+    color: #fff;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-position: 100% 100%;
+    background-repeat: no-repeat ;
+    .section-header .section-desc ,
+    .section-header h3.section-title span{
+        color: #FFF;
+    }
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff8a00;
+    i{
+        transition: 0.3s;
+    }
+    &:hover{
+        i {
+            padding-right: 10px;
+        }
+        
+    }
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h3.section-title {
+        padding-top: 25px;
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        color:$green;
+        span{
+            color: #77828a;
+        }
+    }
+}
+.p-50{
+    padding: 50px 0px;
+}
+.button.button-icon {
+    display: flex;
+    justify-content: flex-end;
+    a.more{
+        background: $green;
+        border-radius: 10px 0px;
+        color:#FFF;
+        padding: 10px;
+    }
+}
+
+.item-viewer{
+    .item {
+        text-align: center;
+        h3.name a {
+            color: #58a443;
+            text-decoration: none;
+            background-color: transparent;
+            font-weight: 700;
+        }
+        .item-img {
+            margin: 30px 0px;
+        }
+        p.description {
+            margin-top: 30px !important;
+            line-height: 2;
+            width: 80%;
+            margin: auto;
+            word-break: break-word;
+        }
+    }
+}

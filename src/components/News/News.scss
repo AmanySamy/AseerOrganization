@@ -1,0 +1,72 @@
+@import '../Home.scss';
+.news{
+    .item {
+        overflow: hidden;
+    }
+    .item-img {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        img{
+            min-width: 100%;
+            height: 100%;
+            max-width: max-content !important;
+        }
+    } 
+    h3.name {
+        font-size: 18px;
+        margin: 10px 0px;
+        a{
+            color:#333;
+            &:hover{
+                text-decoration:none;
+                color:$green;
+            }
+        }
+    }
+    p.description strong {
+        font-weight: 400;
+    }
+}
+/*------------------------------
+	9. BLOG AREA
+-------------------------------*/
+.post-thumb {
+    flex: 1 0;
+    height: 200px !important;
+    overflow: hidden;
+    img{
+        min-width: 100%;
+        height: 100%;
+    }
+}
+.post-meta {
+	padding: 20px 0 10px;
+}
+
+.post-meta a {
+	color: #8ca0b4;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+	color: #ff8a00;
+}
+
+.post-details h3{
+    font-size: 20px;
+    color:#010101;
+    text-decoration: none;
+}
+p.description {
+    margin: 0;
+}
+
+.post-details a.read-more a {
+	display: inline-block;
+    margin-top: 20px;
+    color: #494949;
+    
+}
+
