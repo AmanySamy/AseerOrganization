@@ -12,6 +12,7 @@ import News from './components/News/News';
 import ItemViewer from './components/ItemViewer';
 import MainNavbar from './components/MainNavbar/MainNavbar'
 import Contact from './components/Contact/Contact';
+import Policies from './components/About/Policies';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/all-projects" component={Projects} />            
         <Route path="/all-news" component={News} />
         <Route path="/contact" component={Contact} />
+        <Route exact path="/policies" component={Policies} />          
         <Route exact path="/news/:id" render={({match}) => (<ItemViewer url={`/news/${match.params.id}`} />)} />          
         <Route exact path="/project/:id" render={({match}) => (<ItemViewer url={`/achievements/${match.params.id}`} />)} />          
         <Route exact path="/member/:id" render={({match}) => (<ItemViewer url={`/organizational-structure/${match.params.id}`} />)} />          

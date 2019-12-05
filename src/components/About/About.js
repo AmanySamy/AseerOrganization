@@ -34,7 +34,7 @@ export default class About extends Component {
         const {Result} = this.state
         let About,image;
         if(Result.length !== 0){
-            About = <Global.SectionHeader title={Result[0].title[0].value} desc={Result[0].body[0].value.substr(0, 300)} />
+            About = <Global.SectionHeader title={Result[0].title[0].value} desc={`${Result[0].body[0].value.substr(0, 300)} ...`} />
             image = Result[0].field_image[0].url
         }else{
             About = <div>loading</div>

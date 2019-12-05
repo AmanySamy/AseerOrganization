@@ -4,8 +4,8 @@ export default class Location extends Component {
     render() {
         return (
             <section className="" id="Locations">
-                    <div className="row" style={{height:'100%'}}>
-                        <div className="map w-100">
+                    {/* <div className="row" style={{height:'100%'}}> */}
+                        <div className="map w-100" style={{height:'100%'}}>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.8733789985786!2d42.4983144147851!3d18.215741583180172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e3547737646195%3A0x5e9f98a02ff4294!2sEmirate%20of%20Aseer%20Province!5e0!3m2!1sen!2seg!4v1574924836516!5m2!1sen!2seg" width={'100%'} height={'100%'} frameBorder={0} style={{border: 0}} allowFullScreen />
                         </div>
                         {/* <img src="/img/contact.jpeg" alt=""/> */}
@@ -20,7 +20,7 @@ export default class Location extends Component {
                             </div>
                         </div>
                         
-                    </div>
+                    {/* </div> */}
             </section>
         )
     }

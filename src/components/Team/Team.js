@@ -33,9 +33,9 @@ export default class Team extends Component {
             link={`member/${R.nid[0].value}`} 
             img={R.field_image[0].url} 
             name={R.title[0].value} 
-            subTitle={R.field_position[0].value.substr(0, 25)} 
-            desc={(R.body[0].value).substr(0, 100)}
-            grid="item-col col-md-4 col-12"/>) 
+            subTitle={R.field_position[0].value.substr(0, 40)} 
+            desc={(R.body[0].value).substr(0, 100)+" ..."}
+            grid="item-col col-md-6 col-12"/>) 
             : ResultElement = <div>loading ... </div>
         
 

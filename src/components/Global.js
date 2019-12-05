@@ -23,7 +23,7 @@ class Global extends Component {
                     <div className="features-icon"><i className={`icofont ${props.icon}`} /></div>
                     <h3>{props.title}</h3>
                     <p>{props.desc}</p>
-                    <a href="/about" className="read-more">للمزيد <i className="icofont icofont-long-arrow-left" /></a>
+                    {/* <a href="/about" className="read-more">للمزيد <i className="icofont icofont-long-arrow-left" /></a> */}
                 </div>
             </div>
         )
@@ -89,7 +89,7 @@ class Global extends Component {
                     </div>
                     <div className="post-details">
                     <div className="post-meta">
-                    <p><a href="#"><i className="icofont icofont-user-alt-3" /> By Admin</a><a href="#"><i className="icofont icofont-calendar" /> {props.date}</a></p>
+                    <p><a href="#"><i className="icofont icofont-tags" /> {props.tags} </a><a href="#"><i className="icofont icofont-calendar" /> {props.date}</a></p>
                     </div>
                     <h3>
                         <NavLink exact={true} id={props.id}  to={props.link}>{props.name}</NavLink>

@@ -6,10 +6,19 @@
 */
 import axios from 'axios';
 import { Component } from 'react'
+import  {base} from "../base_url.js";
 
 
 let api = null;
 class API extends Component {
+  constructor(props) {
+    super(props)
+    console.log(base)
+    this.state = {
+       
+    }
+  }
+  
   
   getInitializedApi = () => {
     if (api) return api; // return initialized api if already initialized.
@@ -21,15 +30,11 @@ class API extends Component {
   
   // Helper functions
   getBaseUrl = () => {
-    // Insert logic here to get the baseURL by either:
-    // 1. Sniffing the URL to determine the environment we're running in.
-    // 2. Looking for an environment variable as part of the build process.
-    // localStorage.getItem('lang')؟
-        return 'http://asda.codabella.net/ar';
+    if(base !== '') return base +'/ar';
+    return 'http://asda.codabella.net/ar';
   }
   
-  get = (url) => {
-    
+  get = (url) => {   
     let Initial = this.getInitializedApi()
     return Initial.get(url);
   }
@@ -37,21 +42,11 @@ class API extends Component {
   post = (url, data) => {
     return this.getInitializedApi().post(url, data);
   }
-  
-  // Public functions
-  // Note how short these are due to the centralized config and helpers above. ?
-  // export function getUserById(id) {
-  //   return get(`user/${id}`);
-  // }
+
   getContent = (url) => {
     return this.get(url);
   }
   
-  // export function saveUser(user) {
-  //   return post(`user/${user.id}`, {user: user});
-  // }
-  
-
 }
 
 export default (new API())

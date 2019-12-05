@@ -6,7 +6,7 @@ import './Services.scss';
 
 function ServiceItem(props) {
     return (
-        <div className="col-sm-6 col-md-4 item">
+        <div className="col-12 col-md-4 item">
             <div className="title-icon">
                 <i className={`fa ${props.icon} icon`}></i>
                 <h3 className="name">{props.title}</h3>

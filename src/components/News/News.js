@@ -37,7 +37,8 @@ export default class News extends Component {
                 img={R.field_image[0].url} 
                 name={R.title[0].value} 
                 desc={(R.body[0].value).substr(0, 100)} 
-                date={<Moment parse="YYYY-M-D\TH:i:s" format="YYYY MMM DD">R.created[0].value.split("+")[0]</Moment>}/>
+                tags={R.field_tags.lenght>0 ? R.field_tags.map((t)=><span>t</span>) : ""} 
+                date={<Moment parse="YYYY-mm-dd" format="YYYY MMM DD">R.created[0].value.split("+")[0]</Moment>}/>
             ) 
             : ResultElement = <div>loading ... </div>
         

@@ -4,10 +4,6 @@
     /*-----------------------------
 	3. ABOUT AREA
     ------------------------------*/
-
-    
-
-
     .about-right{
         padding:20px;
         text-align: right !important;
@@ -61,6 +57,7 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: center;
     }
 
     .single-features {

@@ -15,9 +15,9 @@ export default class Home extends Component {
             <div className="Home">               
                 <About />
                 <Services />
-                <News />
                 <Projects />
                 <Team />
+                <News />
                 <Location />
             </div>
         )
