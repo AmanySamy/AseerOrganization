@@ -42,7 +42,7 @@ class Global extends Component {
         return(
             <div className="row">
             <div className="col-12">
-                <div className="button button-icon"><NavLink className="more" to={props.path} title={props.title}>{props.text}</NavLink></div>
+                <div className="button button-icon"><a className="more" href={props.path} title={props.title}>{props.text}</a></div>
             </div>
         </div>
         )
@@ -74,7 +74,7 @@ class Global extends Component {
                         <NavLink exact={true} id={props.id} to={props.link}>{props.name}</NavLink>
                     </h3>
                     {props.subTitle !== '' && <h4 className="sub-title">{props.subTitle} </h4> }
-                    <p className="description">{props.desc}</p>
+                    <p className="description" dangerouslySetInnerHTML={{__html:props.desc}}></p>
                     {/* <NavLink className="read-more" exact={true} id={props.id}  to={props.link}>أقرأ المزيد</NavLink> */}
                 </div>
             </div>
@@ -89,7 +89,7 @@ class Global extends Component {
                     </div>
                     <div className="post-details">
                     <div className="post-meta">
-                    <p><a href="#"><i className="icofont icofont-tags" /> {props.tags} </a><a href="#"><i className="icofont icofont-calendar" /> {props.date}</a></p>
+                        <p>{props.tags && <span><i className="icofont icofont-tags" /> {props.tags} </span>}<span><i className="icofont icofont-calendar" /> {props.date}</span></p>
                     </div>
                     <h3>
                         <NavLink exact={true} id={props.id}  to={props.link}>{props.name}</NavLink>

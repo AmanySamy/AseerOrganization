@@ -23,6 +23,9 @@ export default class Team extends Component {
         if(window.location.pathname === "/"){
             ResultItems = Result.slice(0, 3);
         } else if(window.location.pathname === "/all-members"){
+            // let team = document.getElementById('team')
+            // team.classList.add("amany");
+      
             ResultItems = Result
         }
         (ResultItems.length !== 0)
@@ -35,12 +38,12 @@ export default class Team extends Component {
             name={R.title[0].value} 
             subTitle={R.field_position[0].value.substr(0, 40)} 
             desc={(R.body[0].value).substr(0, 100)+" ..."}
-            grid="item-col col-md-6 col-12"/>) 
+            grid="item-col col-sm-6 col-lg-4 "/>) 
             : ResultElement = <div>loading ... </div>
         
 
         return (
-            <section className="Team p-50 bg-section text-center" id="Team">
+            <section className="Team p-50 bg-section text-center" id="team" ref="TeamSection">
                 <div className="container">
                     <Global.SectionHeader className="text-center" title="الهيكل <span>الأداري</span>" desc="ستمارس الهيئة سلطتها عبر عدد من محاور العمل الرامية إلى تحقيق هدفها في التطوير الشامل، ويتوقع وفق الهيئات القائمة أن تتضمن مهام الهيئة" />
                     <div className="row">
