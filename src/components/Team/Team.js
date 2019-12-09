@@ -43,7 +43,7 @@ export default class Team extends Component {
         
 
         return (
-            <section className="Team p-50 bg-section text-center" id="team" ref="TeamSection">
+            <section className="Team p-50 bg-section text-center" id="Team" ref="TeamSection">
                 <div className="container">
                     <Global.SectionHeader className="text-center" title="الهيكل <span>الأداري</span>" desc="ستمارس الهيئة سلطتها عبر عدد من محاور العمل الرامية إلى تحقيق هدفها في التطوير الشامل، ويتوقع وفق الهيئات القائمة أن تتضمن مهام الهيئة" />
                     <div className="row">
